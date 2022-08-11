@@ -4,8 +4,18 @@
 	padding: 0;
 }
 html{
-	max-width: 100vw;
-	max-height: 100vh;
+	margin: 0; 
+}
+nav{
+	width: 100%;
+	height: 10vh;
+	background-color: white;
+}
+nav img{
+	float: left;
+	padding: 0px 2vw;
+	z-index: 5;
+	position: relative;
 }
 nav li{
 	font-family: 'Billie', sans-serif;
@@ -13,34 +23,26 @@ nav li{
 	color: black;
 	font-size: 25pt;
 	display: inline;
-	margin-left: 5vw;
+	float: left;
+	margin: 4vh 5vw;
 }
 a:link{
-	color: #787878;
+	color: black;
 	text-decoration: none;
 }
 a:visited{
-	color: #787878;
+	color: black;
 	background-color: green;
 	text-decoration: none;
 }
 a:hover{
 	color: #cd1127;
 }
-header{
-	background-color: white;
-	margin: 0;
-	min-height: 10vh;
-}
 #flag{
 transform: translate(0px,20px);
 }
 #home{
 color: #cd1127;
-}
-#lower{
-	min-width: 100vw;
-	transform: translate(0, 41px);
 }
 #text{
 	position: absolute;
@@ -53,8 +55,28 @@ color: #cd1127;
 	left: 50%;
 	transform: translateX(-50%);
 }
-.submenu1{
+.submenu1 {
 	display: none;
+	left: 0;
+	position: absolute;
+	float: none;
+	width: 100%;
+	background-color: white;
+}
+nav li:hover .submenu1{
+	display: block;
+}
+nav li:hover .submenu1 ul{
+	float: left;
+	margin-top: 0.5vh;
+}
+nav li .submenu1 ul li{
+	display: block;
+	float: none;
+	font-size: 20pt;
+	font-weight: normal;
+	margin-left: 2vw;
+	margin-top: 0.5vh;
 }
 .back-video{
 	position: absolute;
@@ -67,5 +89,76 @@ color: #cd1127;
 		width: 100%;
 		height: auto;
 	}
-
+}
+.word{
+	width: 1000px;
+	height: 500px;
+	background-color: gray;
+}
+#aboutyemen {
+	font-family: 'Billie', sans-serif;
+	position: absolute;
+	color: black;
+	font-size: 18pt;
+	display: inline-block;
+	left: 40%;
+	top: 41%;
+	width: 15vw;
+	text-align: left, justify;
+}
+#ay_head {
+	z-index: =-5;
+}
+#head1 {
+font-family: 'Billie', sans-serif;
+	font-weight: bold;
+	color: white;
+	font-size: 45pt;
+	display: block;
+	margin-left: 5vw;
+	position: absolute;
+	top: 39.5vh;	
+	z-index: 3;
+	width: 1000px;
+	margin-block-start: auto;
+    margin-block-end: auto;
+}
+#head2 {
+font-family: 'Billie', sans-serif;
+	font-weight: bold;
+	color: white;
+	font-size: 30pt;
+	display: block;
+	width: 200px;
+	margin-left: 5.075vw;
+	position: absolute;
+	top: 37vh;	
+	z-index: 3;
+	border: black;
+	margin-block-start: auto;
+    margin-block-end: auto;
+}
+.map {
+background-color: white;
+width: 100vw;
+height: 50vh;
+}
+.map img{
+	display: block;
+	text-align: center;
+	margin-top: 2vh;
+	margin-right: 25vw;
+	float: right;
+}
+.map p{
+	font-weight: bold;
+	color: black;
+	font-size: 30pt;
+	display: block;
+	width: 600px;
+	margin-left: 5.075vw;
+	margin-bottom: 10vh;
+	position: absolute;
+	z-index: 3;
+	bottom: ;	
 }
